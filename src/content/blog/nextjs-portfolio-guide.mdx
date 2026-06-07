@@ -1,0 +1,93 @@
+---
+title: "Next.js 14 портфолио: нөлден деплойға дейін"
+description: "Next.js 14, TypeScript, Tailwind CSS және ShadCN UI арқылы кәсіби портфолио сайт жасаудың толық нұсқаулығы"
+date: "2025-01-10"
+tags: ["Next.js", "TypeScript", "Portfolio", "Tailwind", "ShadCN"]
+published: true
+readTime: 10
+---
+
+## Неге Next.js?
+
+Портфолио сайт үшін Next.js таңдаудың бірнеше себебі бар:
+
+- **Жылдам жүктелу** — статикалық генерация арқылы
+- **SEO** — серверлік рендеринг іздеу жүйелері үшін тамаша
+- **DX** — TypeScript, hot reload, ең жақсы developer experience
+- **Vercel/Railway** — тегін хостинг
+
+## Жоба инициализациясы
+
+```bash
+npx create-next-app@latest portfolio --typescript --tailwind --app --src-dir
+cd portfolio
+npx shadcn@latest init
+npx shadcn@latest add button card badge
+```
+
+## Негізгі беттер
+
+**Басты бет** — Hero + Featured жобалар + Соңғы мақалалар
+
+**Жобалар** — MDX файлдарынан статикалық генерация:
+
+```typescript
+// src/app/projects/page.tsx
+import { getAllProjects } from '@/lib/mdx';
+
+export default function ProjectsPage() {
+  const projects = getAllProjects();
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.map(p => <ProjectCard key={p.slug} project={p} />)}
+    </div>
+  );
+}
+```
+
+## MDX блог
+
+MDX — Markdown + JSX компоненттер. Мақалаларды `.mdx` файлдарында жазасыз:
+
+```mdx
+---
+title: "Мақала атауы"
+date: "2025-01-01"
+tags: ["Next.js"]
+published: true
+---
+
+## Бөлім
+
+Мазмұн **bold** және `код` мысалдарымен.
+```
+
+## Dark/Light тема
+
+```bash
+npm install next-themes
+```
+
+```typescript
+// ThemeProvider.tsx
+'use client';
+import { ThemeProvider as NextThemesProvider } from 'next-themes';
+export function ThemeProvider({ children }) {
+  return <NextThemesProvider attribute="class" defaultTheme="system">{children}</NextThemesProvider>;
+}
+```
+
+## Railway деплой
+
+```bash
+npm install -g @railway/cli
+railway login
+railway init
+railway up
+```
+
+Railway автоматты түрде Next.js-ті анықтайды және деплой жасайды.
+
+## Қорытынды
+
+Next.js портфолио — фрилансер үшін ең жақсы инвестиция. Кәсіби көрініс, жылдам жүктелу және SEO — барлығы бірге.

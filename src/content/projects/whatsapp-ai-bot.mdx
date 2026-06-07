@@ -1,0 +1,38 @@
+---
+title: "WhatsApp AI Support Bot"
+description: "Automated customer support bot for WhatsApp Business using GPT-4. Handles FAQs, routes complex queries to humans, and responds in Kazakh, Russian, and English."
+type: "chatbot"
+stack: ["Python", "GPT-4", "Twilio", "FastAPI", "Redis"]
+featured: true
+order: 1
+github: "https://github.com/akbota-dev/whatsapp-ai-bot"
+image: "/images/projects/whatsapp-ai-bot.png"
+published: true
+---
+
+## Overview
+
+An intelligent WhatsApp Business bot that handles customer support 24/7 using OpenAI's GPT-4. Built for a Kazakh e-commerce client, the bot handles over 200 daily inquiries and has reduced support costs by 60%.
+
+## Features
+
+- **Multilingual support** — responds in Kazakh, Russian, and English automatically
+- **Smart routing** — escalates complex issues to human agents via Telegram notification
+- **Context memory** — maintains conversation context using Redis for natural dialogue
+- **Business hours** — different responses during/after business hours
+- **Analytics dashboard** — tracks response rates, common questions, and escalations
+
+## Technical Stack
+
+- **Python** + **FastAPI** for the webhook server
+- **OpenAI GPT-4** for natural language understanding and generation
+- **Twilio WhatsApp API** for messaging
+- **Redis** for conversation state management
+- **PostgreSQL** for logging and analytics
+
+## Results
+
+- 200+ daily automated conversations
+- 60% reduction in human support workload
+- 95% customer satisfaction rate
+- Average response time: < 2 seconds

@@ -1,0 +1,77 @@
+---
+title: "Бизнесіңіз үшін WhatsApp AI бот жасау: толық нұсқаулық"
+description: "Python, GPT-4 және Twilio арқылы WhatsApp бизнес-ботын нөлден жасаудың қадамдық нұсқаулығы"
+date: "2024-11-15"
+tags: ["AI", "WhatsApp", "Python", "Automation", "Chatbot"]
+published: true
+readTime: 8
+---
+
+## Кіріспе
+
+WhatsApp — Қазақстанда ең танымал мессенджер. Бизнес үшін оны автоматизациялау клиенттермен байланысты жақсартады және уақытты үнемдейді.
+
+Бұл мақалада Python, GPT-4 және Twilio арқылы WhatsApp AI бот жасауды үйренесіз.
+
+## Не қажет?
+
+- Python 3.11+
+- Twilio аккаунты (WhatsApp Sandbox)
+- OpenAI API кілті
+- FastAPI (webhook сервері үшін)
+
+## 1-қадам: Ортаны дайындау
+
+```bash
+pip install fastapi twilio openai python-dotenv uvicorn
+```
+
+`.env` файлы:
+```
+TWILIO_ACCOUNT_SID=...
+TWILIO_AUTH_TOKEN=...
+OPENAI_API_KEY=...
+```
+
+## 2-қадам: Webhook сервері
+
+```python
+from fastapi import FastAPI, Form
+from twilio.rest import Client
+import openai
+import os
+
+app = FastAPI()
+client = Client(os.getenv("TWILIO_ACCOUNT_SID"), os.getenv("TWILIO_AUTH_TOKEN"))
+
+@app.post("/webhook")
+async def handle_message(Body: str = Form(), From: str = Form()):
+    response = openai.chat.completions.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "Сіз бизнес-боттсыз. Клиенттерге қазақша, орысша және ағылшынша жауап беріңіз."},
+            {"role": "user", "content": Body}
+        ]
+    )
+    reply = response.choices[0].message.content
+    client.messages.create(body=reply, from_="whatsapp:+14155238886", to=From)
+    return {"status": "ok"}
+```
+
+## 3-қадам: Twilio баптау
+
+1. Twilio Console → Messaging → Try it out → Send a WhatsApp message
+2. Sandbox URL-ін webhook адресіңізге орнатыңыз
+3. Тест телефоннан `join [sandbox-code]` жіберіңіз
+
+## 4-қадам: Деплой (Railway)
+
+```bash
+railway init
+railway add
+railway up
+```
+
+## Қорытынды
+
+Осы қарапайым архитектурамен сіз 24/7 жұмыс істейтін WhatsApp ботын жасай аласыз. Кейінгі қадам — контекст жадын (Redis) қосу.
