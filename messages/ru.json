@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Главная",
+    "projects": "Проекты",
+    "blog": "Блог",
+    "about": "Обо мне",
+    "contact": "Контакты"
+  },
+  "hero": {
+    "greeting": "Привет, я",
+    "name": "Акбота",
+    "title": "AI-автоматизатор & Веб-разработчик",
+    "description": "Создаю AI-чатботы, автоматизацию и веб-сайты для вашего бизнеса",
+    "cta_projects": "Смотреть проекты",
+    "cta_contact": "Связаться"
+  },
+  "projects": {
+    "title": "Проекты",
+    "subtitle": "Мои выполненные работы",
+    "filter_all": "Все",
+    "filter_chatbot": "Чатбот",
+    "filter_website": "Веб-сайт",
+    "filter_ai_tool": "AI-инструмент",
+    "filter_scraper": "Скрейпер",
+    "view_demo": "Демо",
+    "view_code": "Код"
+  },
+  "blog": {
+    "title": "Блог",
+    "subtitle": "Статьи и опыт",
+    "search_placeholder": "Поиск...",
+    "read_more": "Читать далее",
+    "min_read": "мин чтения"
+  },
+  "about": {
+    "title": "Обо мне",
+    "subtitle": "Фрилансер — AI-автоматизация, сайты и веб-приложения",
+    "skills_title": "Навыки",
+    "experience_title": "Опыт"
+  },
+  "contact": {
+    "title": "Контакты",
+    "subtitle": "Напишите мне о проекте",
+    "name_label": "Ваше имя",
+    "email_label": "Email",
+    "message_label": "Сообщение",
+    "send_button": "Отправить",
+    "success": "Сообщение отправлено!",
+    "error": "Ошибка. Попробуйте снова."
+  },
+  "footer": {
+    "rights": "Все права защищены",
+    "made_with": "сделано с"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Басты",
+    "projects": "Жобалар",
+    "blog": "Блог",
+    "about": "Мен туралы",
+    "contact": "Байланыс"
+  },
+  "hero": {
+    "greeting": "Сәлем, мен",
+    "name": "Ақбота",
+    "title": "AI Автоматизатор & Веб-дамытушы",
+    "description": "Бизнесіңізге арналған AI чатботтар, автоматизация және веб-сайттар жасаймын",
+    "cta_projects": "Жобаларды көру",
+    "cta_contact": "Байланысу"
+  },
+  "projects": {
+    "title": "Жобалар",
+    "subtitle": "Менің жасаған жұмыстарым",
+    "filter_all": "Барлығы",
+    "filter_chatbot": "Чатбот",
+    "filter_website": "Веб-сайт",
+    "filter_ai_tool": "AI Құрал",
+    "filter_scraper": "Скрейпер",
+    "view_demo": "Демо",
+    "view_code": "Код"
+  },
+  "blog": {
+    "title": "Блог",
+    "subtitle": "Мақалалар мен тәжірибелер",
+    "search_placeholder": "Іздеу...",
+    "read_more": "Толығырақ",
+    "min_read": "мин оқу"
+  },
+  "about": {
+    "title": "Мен туралы",
+    "subtitle": "Фрилансер — AI автоматизация, сайттар және веб-қосымшалар",
+    "skills_title": "Дағдылар",
+    "experience_title": "Тәжірибе"
+  },
+  "contact": {
+    "title": "Байланыс",
+    "subtitle": "Жоба туралы хабарласыңыз",
+    "name_label": "Атыңыз",
+    "email_label": "Email",
+    "message_label": "Хабарлама",
+    "send_button": "Жіберу",
+    "success": "Хабарлама жіберілді!",
+    "error": "Қате. Қайта көріңіз."
+  },
+  "footer": {
+    "rights": "Барлық құқықтар қорғалған",
+    "made_with": "жасалған"
+  }
+}

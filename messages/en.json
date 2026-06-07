@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Akbota",
+    "title": "AI Automator & Web Developer",
+    "description": "I build AI chatbots, automation workflows, and websites for your business",
+    "cta_projects": "View Projects",
+    "cta_contact": "Get in Touch"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "My completed work",
+    "filter_all": "All",
+    "filter_chatbot": "Chatbot",
+    "filter_website": "Website",
+    "filter_ai_tool": "AI Tool",
+    "filter_scraper": "Scraper",
+    "view_demo": "Demo",
+    "view_code": "Code"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles and experience",
+    "search_placeholder": "Search...",
+    "read_more": "Read more",
+    "min_read": "min read"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Freelancer — AI automation, websites and web apps",
+    "skills_title": "Skills",
+    "experience_title": "Experience"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Tell me about your project",
+    "name_label": "Your Name",
+    "email_label": "Email",
+    "message_label": "Message",
+    "send_button": "Send",
+    "success": "Message sent!",
+    "error": "Error. Please try again."
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "made_with": "made with"
+  }
+}
