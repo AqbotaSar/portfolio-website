@@ -48,6 +48,16 @@
     "success": "Message sent!",
     "error": "Error. Please try again."
   },
+  "home": {
+    "available": "Available for freelance",
+    "featured_title": "Featured Projects",
+    "featured_subtitle": "A selection of my recent work",
+    "featured_all": "View all projects",
+    "latest_title": "Latest Posts",
+    "latest_subtitle": "Thoughts on AI, automation, and web development",
+    "latest_all": "Read all posts",
+    "tech_title": "Technologies I Work With"
+  },
   "footer": {
     "rights": "All rights reserved",
     "made_with": "made with"

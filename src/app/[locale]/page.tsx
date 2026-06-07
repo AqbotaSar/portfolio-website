@@ -1,11 +1,21 @@
-import { useTranslations } from 'next-intl';
+import Hero from '@/components/home/Hero';
+import FeaturedProjects from '@/components/home/FeaturedProjects';
+import LatestPosts from '@/components/home/LatestPosts';
+import TechStack from '@/components/home/TechStack';
 
-export default function HomePage() {
-  const t = useTranslations('hero');
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+
   return (
-    <main>
-      <h1>{t('greeting')} {t('name')}</h1>
-      <p>{t('title')}</p>
-    </main>
+    <>
+      <Hero locale={locale} />
+      <FeaturedProjects locale={locale} />
+      <LatestPosts locale={locale} />
+      <TechStack locale={locale} />
+    </>
   );
 }
