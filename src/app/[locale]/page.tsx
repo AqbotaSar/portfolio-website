@@ -12,6 +12,21 @@ export default async function HomePage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Akbota",
+            "url": "https://akbota.dev",
+            "email": "aqaqbotaq@gmail.com",
+            "jobTitle": "AI Automator & Web Developer",
+            "description": "Freelancer specializing in AI chatbots, automation, and web development",
+            "sameAs": ["https://t.me/akbota_dev", "https://github.com/akbota-dev"],
+          }),
+        }}
+      />
       <Hero locale={locale} />
       <FeaturedProjects locale={locale} />
       <LatestPosts locale={locale} />

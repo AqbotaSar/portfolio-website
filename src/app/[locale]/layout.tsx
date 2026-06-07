@@ -16,8 +16,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Akbota — AI Automator & Web Developer",
-  description: "AI chatbots, automation, and websites for your business",
+  title: { template: '%s | Akbota', default: 'Akbota — AI Automator & Web Developer' },
+  description: 'AI chatbots, automation workflows, and websites for your business',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://akbota.dev'),
+  openGraph: {
+    type: 'website',
+    locale: 'ru_RU',
+    url: process.env.NEXT_PUBLIC_BASE_URL || 'https://akbota.dev',
+    siteName: 'Akbota',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Akbota Portfolio' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og-image.png'],
+  },
+  alternates: {
+    types: { 'application/rss+xml': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://akbota.dev'}/feed.xml` },
+  },
 };
 
 export default async function LocaleLayout({
