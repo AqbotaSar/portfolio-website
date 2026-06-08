@@ -39,9 +39,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const extraStack = stack.length > 4 ? stack.length - 4 : 0;
 
   return (
-    <Card className="group hover:shadow-md transition-all duration-200 overflow-hidden h-full flex flex-col">
-      {/* Cover image / placeholder */}
-      <Link href={`/projects/${slug}`} className="block">
+    <Link href={`/projects/${slug}`} className="block h-full">
+      <Card className="group hover:shadow-md transition-all duration-200 overflow-hidden h-full flex flex-col cursor-pointer">
+        {/* Cover image / placeholder */}
         <div className="aspect-video bg-muted relative overflow-hidden">
           {image ? (
             <Image
@@ -62,74 +62,75 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </div>
           )}
         </div>
-      </Link>
 
-      <CardContent className="p-5 flex flex-col flex-1">
-        {/* Title + type badge */}
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <Link href={`/projects/${slug}`} className="hover:underline">
+        <CardContent className="p-5 flex flex-col flex-1">
+          {/* Title + type badge */}
+          <div className="flex items-start justify-between gap-2 mb-2">
             <h3 className="font-semibold text-base leading-tight">{title}</h3>
-          </Link>
-          <span
-            className={cn(
-              'inline-flex shrink-0 items-center rounded-full px-2 py-0.5 text-xs font-medium',
-              typeColors[type] ?? typeColors.chatbot
+            <span
+              className={cn(
+                'inline-flex shrink-0 items-center rounded-full px-2 py-0.5 text-xs font-medium',
+                typeColors[type] ?? typeColors.chatbot
+              )}
+            >
+              {typeLabels[type] ?? type}
+            </span>
+          </div>
+
+          {/* Description */}
+          <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
+            {description}
+          </p>
+
+          {/* Stack badges */}
+          <div className="flex flex-wrap gap-1 mb-auto">
+            {visibleStack.map((tech) => (
+              <Badge key={tech} variant="outline" className="text-xs h-5">
+                {tech}
+              </Badge>
+            ))}
+            {extraStack > 0 && (
+              <Badge variant="outline" className="text-xs h-5">
+                +{extraStack} more
+              </Badge>
             )}
-          >
-            {typeLabels[type] ?? type}
-          </span>
-        </div>
+          </div>
 
-        {/* Description */}
-        <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
-          {description}
-        </p>
-
-        {/* Stack badges */}
-        <div className="flex flex-wrap gap-1 mb-auto">
-          {visibleStack.map((tech) => (
-            <Badge key={tech} variant="outline" className="text-xs h-5">
-              {tech}
-            </Badge>
-          ))}
-          {extraStack > 0 && (
-            <Badge variant="outline" className="text-xs h-5">
-              +{extraStack} more
-            </Badge>
-          )}
-        </div>
-
-        {/* Action buttons */}
-        <div className="flex gap-2 mt-4">
-          {github && (
-            <Button
-              variant="outline"
-              size="sm"
-              className="gap-1.5"
-              onClick={(e) => {
-                e.stopPropagation();
-                window.open(github, '_blank', 'noopener,noreferrer');
-              }}
-            >
-              <Code className="size-3.5" />
-              Code
-            </Button>
-          )}
-          {demo && (
-            <Button
-              size="sm"
-              className="gap-1.5"
-              onClick={(e) => {
-                e.stopPropagation();
-                window.open(demo, '_blank', 'noopener,noreferrer');
-              }}
-            >
-              <ExternalLink className="size-3.5" />
-              Demo
-            </Button>
-          )}
-        </div>
-      </CardContent>
-    </Card>
+          {/* Action buttons */}
+          <div className="flex gap-2 mt-4">
+            {github && (
+              <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className={cn(
+                  'inline-flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-sm font-medium',
+                  'border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors'
+                )}
+              >
+                <Code className="size-3.5" />
+                Code
+              </a>
+            )}
+            {demo && (
+              <a
+                href={demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className={cn(
+                  'inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium',
+                  'bg-primary text-primary-foreground hover:bg-primary/90 transition-colors'
+                )}
+              >
+                <ExternalLink className="size-3.5" />
+                Demo
+              </a>
+            )}
+          </div>
+        </CardContent>
+      </Card>
+    </Link>
   );
 }

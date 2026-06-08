@@ -1,0 +1,30 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#1a2332"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#833AB4"/>
+      <stop offset="50%" style="stop-color:#FD1D1D"/>
+      <stop offset="100%" style="stop-color:#FCAF45"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <line x1="0" y1="112" x2="800" y2="112" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="0" y1="225" x2="800" y2="225" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="0" y1="337" x2="800" y2="337" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <circle cx="400" cy="200" r="180" fill="#833AB415"/>
+  <circle cx="400" cy="185" r="72" fill="#833AB420" stroke="#FD1D1D40" stroke-width="1.5"/>
+  <circle cx="400" cy="185" r="40" fill="url(#accent)"/>
+  <rect x="384" y="169" width="32" height="32" rx="9" fill="none" stroke="white" stroke-width="2.5"/>
+  <circle cx="400" cy="185" r="8" fill="none" stroke="white" stroke-width="2.5"/>
+  <circle cx="413" cy="172" r="2" fill="white"/>
+  <text x="400" y="285" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Instagram DM Automator</text>
+  <text x="400" y="315" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#ffffff80">Meta API · n8n · GPT-4</text>
+  <rect x="338" y="338" width="124" height="28" rx="14" fill="#833AB425" stroke="#FD1D1D60" stroke-width="1"/>
+  <text x="400" y="357" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#FCAF45">Chatbot</text>
+</svg>

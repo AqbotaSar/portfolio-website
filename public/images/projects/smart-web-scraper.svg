@@ -1,0 +1,36 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#1a2332"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <line x1="0" y1="112" x2="800" y2="112" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="0" y1="225" x2="800" y2="225" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="0" y1="337" x2="800" y2="337" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <!-- Code terminal -->
+  <rect x="200" y="120" width="400" height="210" rx="8" fill="#1e2433" stroke="#ffffff15" stroke-width="1"/>
+  <rect x="200" y="120" width="400" height="28" rx="8" fill="#2a3040"/>
+  <rect x="200" y="136" width="400" height="12" fill="#2a3040"/>
+  <circle cx="218" cy="134" r="5" fill="#FF5F57"/>
+  <circle cx="234" cy="134" r="5" fill="#FEBC2E"/>
+  <circle cx="250" cy="134" r="5" fill="#28C840"/>
+  <!-- Code lines -->
+  <text x="220" y="172" font-family="monospace" font-size="12" fill="#F59E0B">$ scraper run</text>
+  <text x="220" y="192" font-family="monospace" font-size="11" fill="#10B981">✓ Found 247 URLs</text>
+  <text x="220" y="210" font-family="monospace" font-size="11" fill="#3B82F6">→ Extracting data...</text>
+  <text x="220" y="228" font-family="monospace" font-size="11" fill="#ffffff60">  [████████░░] 80%</text>
+  <text x="220" y="246" font-family="monospace" font-size="11" fill="#10B981">✓ AI classified 198 items</text>
+  <text x="220" y="264" font-family="monospace" font-size="11" fill="#ffffff40">→ Saving to output.json</text>
+  <text x="220" y="282" font-family="monospace" font-size="11" fill="#F59E0B">✓ Done in 3.2s</text>
+  <text x="400" y="368" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Smart Web Scraper</text>
+  <text x="400" y="398" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#ffffff80">Python · Playwright · AI Classification</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#1a2332"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#010101"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <line x1="0" y1="112" x2="800" y2="112" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="0" y1="225" x2="800" y2="225" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="0" y1="337" x2="800" y2="337" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <!-- Chart bars -->
+  <rect x="260" y="210" width="30" height="50" rx="4" fill="#69C9D020" stroke="#69C9D050" stroke-width="1"/>
+  <rect x="305" y="185" width="30" height="75" rx="4" fill="#69C9D030" stroke="#69C9D070" stroke-width="1"/>
+  <rect x="350" y="155" width="30" height="105" rx="4" fill="#EE1D5220" stroke="#EE1D5250" stroke-width="1"/>
+  <rect x="395" y="170" width="30" height="90" rx="4" fill="#EE1D5230" stroke="#EE1D5270" stroke-width="1"/>
+  <rect x="440" y="140" width="30" height="120" rx="4" fill="#69C9D040" stroke="#69C9D080" stroke-width="1"/>
+  <!-- TikTok icon bg -->
+  <circle cx="400" cy="185" r="72" fill="#69C9D015" stroke="#EE1D5230" stroke-width="1.5"/>
+  <circle cx="400" cy="185" r="40" fill="#010101"/>
+  <!-- TikTok logo -->
+  <path d="M410 170c2 2.5 5 4 8.5 4.3v6c-3 0-5.8-.8-8.2-2.3v10c0 5.5-4.5 10-10 10s-10-4.5-10-10 4.5-10 10-10c.5 0 1 0 1.5.1v6.2c-.5-.1-1-.2-1.5-.2-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4v-18.1h5.7z" fill="white"/>
+  <path d="M410 170c2 2.5 5 4 8.5 4.3v6c-3 0-5.8-.8-8.2-2.3v10c0 5.5-4.5 10-10 10s-10-4.5-10-10 4.5-10 10-10c.5 0 1 0 1.5.1v6.2c-.5-.1-1-.2-1.5-.2-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4v-18.1h5.7z" fill="#69C9D0" opacity="0.5" transform="translate(-2, 2)"/>
+  <text x="400" y="285" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">TikTok Trend Analyzer</text>
+  <text x="400" y="315" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#ffffff80">Python · TikTok API · OpenAI</text>
+  <rect x="330" y="338" width="140" height="28" rx="14" fill="#69C9D025" stroke="#EE1D5260" stroke-width="1"/>
+  <text x="400" y="357" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#69C9D0">AI Tool</text>
+</svg>

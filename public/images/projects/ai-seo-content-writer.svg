@@ -1,0 +1,44 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#1a2332"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899"/>
+      <stop offset="100%" style="stop-color:#DB2777"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <line x1="0" y1="112" x2="800" y2="112" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="0" y1="337" x2="800" y2="337" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <!-- Document -->
+  <rect x="240" y="105" width="320" height="260" rx="8" fill="#1e2433" stroke="#ffffff15" stroke-width="1"/>
+  <!-- Title bar -->
+  <rect x="240" y="105" width="320" height="35" rx="8" fill="#2a3040"/>
+  <rect x="240" y="128" width="320" height="12" fill="#2a3040"/>
+  <rect x="258" y="117" width="90" height="8" rx="3" fill="#EC489950"/>
+  <!-- SEO score -->
+  <rect x="490" y="113" width="56" height="20" rx="4" fill="#10B98120" stroke="#10B98150" stroke-width="1"/>
+  <text x="518" y="127" text-anchor="middle" font-family="monospace" font-size="10" fill="#10B981">SEO 94</text>
+  <!-- Content lines -->
+  <rect x="258" y="152" width="284" height="10" rx="2" fill="#EC489930"/>
+  <rect x="258" y="170" width="260" height="7" rx="2" fill="#ffffff20"/>
+  <rect x="258" y="184" width="280" height="7" rx="2" fill="#ffffff18"/>
+  <rect x="258" y="198" width="240" height="7" rx="2" fill="#ffffff15"/>
+  <rect x="258" y="218" width="200" height="9" rx="2" fill="#EC489920"/>
+  <rect x="258" y="234" width="270" height="7" rx="2" fill="#ffffff18"/>
+  <rect x="258" y="248" width="250" height="7" rx="2" fill="#ffffff15"/>
+  <rect x="258" y="262" width="230" height="7" rx="2" fill="#ffffff12"/>
+  <!-- Keyword badges -->
+  <rect x="258" y="282" width="60" height="18" rx="9" fill="#EC489920" stroke="#EC489950" stroke-width="1"/>
+  <text x="288" y="295" text-anchor="middle" font-family="system-ui" font-size="9" fill="#EC4899">AI tools</text>
+  <rect x="328" y="282" width="65" height="18" rx="9" fill="#EC489920" stroke="#EC489950" stroke-width="1"/>
+  <text x="360" y="295" text-anchor="middle" font-family="system-ui" font-size="9" fill="#EC4899">Next.js</text>
+  <rect x="403" y="282" width="75" height="18" rx="9" fill="#EC489920" stroke="#EC489950" stroke-width="1"/>
+  <text x="440" y="295" text-anchor="middle" font-family="system-ui" font-size="9" fill="#EC4899">portfolio</text>
+  <text x="400" y="396" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">AI SEO Content Writer</text>
+  <text x="400" y="424" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#ffffff80">Next.js · OpenAI API · NLP</text>
+</svg>
